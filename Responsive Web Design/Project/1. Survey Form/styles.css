@@ -66,16 +66,55 @@ textarea {
 .submit {
     background-color: #37af65;
     border: none;
+    border-radius: 5px;
     color: white;
     padding: 10px auto;
     cursor: pointer;
 }
 
+/* .submit {
+  margin: 2rem;
+  position: relative;
+  width: 70px;
+  height: 30px;
+  font-size: 10px;
+  background-image: linear-gradient(45deg,  #141e30 0%, #243b55 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: width 0.5s; 
+  border-radius: 0.5s;
+} 
+
+.submit * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s;
+}
+
+.submit:focus {
+  width: 30px;
+  background-image: linear-gradient(45deg, #00c9ff 0%, #92fe9d 100%);
+  border-radius: 50px;
+}
+
+.submit:focus span {
+  opacity: 0;
+}
+
+.submit:focus span i {
+  opacity: 1;
+  transition-delay: 0.5s;
+} */
+
 
 /* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 
-
 .container1 {
+
     display: block;
     position: relative;
     padding-left: 35px;
