@@ -1,75 +1,80 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    width: 700px;
-    height: auto;
-    margin:auto;
-    text-align: center;
-    background-image: linear-gradient(115deg, rgba(90, 116, 202, 0.7), rgba(136, 204, 206, 0.7)), url(https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 20px;
+  font-family: "Poppins", sans-serif;
+  width: 700px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  background-image: linear-gradient(
+      115deg,
+      rgba(90, 116, 202, 0.7),
+      rgba(136, 204, 206, 0.7)
+    ),
+    url(https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
 }
 
 p {
-    font-style: italic;
+  font-style: italic;
 }
 
 form {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
 }
 
 label {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 
 input,
 select {
-    margin: 5px 0;
-    width: 100%;
-    min-height: 2em;
-    border: 1px solid;
-    border-radius: 0.25rem;
+  margin: 5px 0;
+  width: 100%;
+  min-height: 2em;
+  border: 1px solid;
+  border-radius: 0.25rem;
 }
 
 form {
-    text-align: left;
+  text-align: left;
 }
 
 fieldset {
-    border: none;
-    border-radius: 5px;
-    padding: 2rem 0;
-    background-color: rgba(171, 177, 129, 0.8)
-  }
+  border: none;
+  border-radius: 5px;
+  padding: 2rem 0;
+  background-color: rgba(171, 177, 129, 0.8);
+}
 
 .inline {
-    width: auto;
-    height: auto;
-    margin: -5000px 1em -5000px 0;
-    vertical-align: middle;
+  width: auto;
+  height: auto;
+  margin: -5000px 1em -5000px 0;
+  vertical-align: middle;
 }
 
 textarea {
-    font-family: 'Poppins', sans-serif;
-    font-size: medium;
-    border: auto;
-    margin: 5px 0;
-    width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  border: auto;
+  margin: 5px 0;
+  width: 100%;
 }
 
 .submit {
-    background-color: #37af65;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px auto;
-    cursor: pointer;
+  background-color: #37af65;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px auto;
+  cursor: pointer;
 }
 
 /* .submit {
@@ -110,66 +115,64 @@ textarea {
   transition-delay: 0.5s;
 } */
 
-
 /* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 
 .container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 15px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+.container1 input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
 
-  .container1 input {
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  .checkmark1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 15px;
-    width: 15px;
-    background-color: #eee;
-    border-radius: 50%;
-  }
-  
-  .container1:hover input ~ .checkmark1 {
-    background-color: #ccc;
-  }
-  
-  .container1 input:checked ~ .checkmark1 {
-    background-color: #2196F3;
-  }
-  
-  .checkmark1:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  .container1 input:checked ~ .checkmark1:after {
-    display: block;
-  }
-  
-  .container1 .checkmark1:after {
-    top: 3.5px;
-    left: 3.5px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
-  }
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container1:hover input ~ .checkmark1 {
+  background-color: #ccc;
+}
+
+.container1 input:checked ~ .checkmark1 {
+  background-color: #2196f3;
+}
+
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container1 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+.container1 .checkmark1:after {
+  top: 3.5px;
+  left: 3.5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
 
 .container2 {
   display: block;
@@ -205,7 +208,7 @@ textarea {
 }
 
 .container2 input:checked ~ .checkmark2 {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .checkmark2:after {
